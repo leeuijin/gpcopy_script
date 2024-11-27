@@ -1,4 +1,11 @@
-## 1.파일 내용 요약 ##
+## 1.사용방법  ##
+
+ 	git clone https://github.com/leeuijin/gpcopy_script
+  	cd ./gpcopy_script
+   	chmod +x *.sh
+    	sh 5_gpcopy_all.sh
+	
+## 2.파일 내용 요약 ##
 
 	0_gpcopy_init.sh 		: 작업 디렉토리 생성 및 로그 기존 로그 삭제 
 	1_tbl_size_report.sh		: ./sql 경로의 쿼리를 실행하여 리포트 작성
@@ -12,7 +19,7 @@
 	4_gpcopy_prt_all.sh         	: 2_gen_include_table_file.sh 에서 생성된 파일중 파티션 테이블 대상으로 gpcopy 실행 	(기본 옵션 : truncate,validate count, jobs 8, analyze)
 	5_gpcopy_all.sh             	: 0~4번 스크립트를 일괄 실행
 
-## 2.디렉토리 설명 ##
+## 3.디렉토리 설명 ##
 
 	./include-table-file        : gpcopy 대상 테이블 파일 
 	./logs                      : 작업로그 
