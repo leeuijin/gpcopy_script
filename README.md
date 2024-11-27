@@ -8,8 +8,8 @@
 					외부 테이블 제외,크기순으로 정렬
 
 	2_gen_include_table_file.sh 	: gpcopy 에서 --include-table-file 로 사용할 수 있도록 대상 테이블 목록 파일 생성 (파티션/비파티션)
-	3_gpcopy_non_prt_all.sh     	: 2_gen_include_table_file.sh 에서 생성된 파일중 비파티션 테이블 대상으로 gpcopy 실행 (기본 옵션 : truncate,validate count, jobs 8)
-	4_gpcopy_prt_all.sh         	: 2_gen_include_table_file.sh 에서 생성된 파일중 파티션 테이블 대상으로 gpcopy 실행 (기본 옵션 : truncate,validate count, jobs 8)
+	3_gpcopy_non_prt_all.sh     	: 2_gen_include_table_file.sh 에서 생성된 파일중 비파티션 테이블 대상으로 gpcopy 실행 	(기본 옵션 : truncate,validate count, jobs 8, analyze)
+	4_gpcopy_prt_all.sh         	: 2_gen_include_table_file.sh 에서 생성된 파일중 파티션 테이블 대상으로 gpcopy 실행 	(기본 옵션 : truncate,validate count, jobs 8, analyze)
 	5_gpcopy_all.sh             	: 0~4번 스크립트를 일괄 실행
 
 ## 2.디렉토리 설명 ##
