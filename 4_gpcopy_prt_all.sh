@@ -4,7 +4,7 @@ TODAY=$(date "+%Y%m%d")
 CURR_PATH=`pwd -P`
 
 echo '##############################################'
-echo '4.GPCOPY Running Partioned Tables'
+echo '      4.GPCOPY Running Partioned Tables       '
 echo '##############################################'
 #gpcopy partitioned
 
