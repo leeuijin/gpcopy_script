@@ -6,7 +6,7 @@ CURR_PATH=`pwd -P`
 #gpcopy non partitioned
 
 echo '##############################################'
-echo '3.GPCOPY Running Non-partioned Tables'
+echo '      3.GPCOPY Running Non-partioned Tables   '
 echo '##############################################'
 
 gpcopy \
