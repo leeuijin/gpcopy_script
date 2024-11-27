@@ -13,6 +13,6 @@ echo 'partitoned table count'
 sed '$d' ./include-table-file/prt_tbl_all |wc -l
 
 echo '##############################################'
-echo '2.Generated gpcopy files...'
+echo '           2.Generated gpcopy files...        '
 echo '##############################################'
 ls -al ./include-table-file
