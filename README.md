@@ -4,8 +4,17 @@
   	cd ./gpcopy_script
    	chmod +x *.sh
     	sh 5_gpcopy_all.sh
+
+## 2. 설명    ##
+
+ 	Greenplum v4 버젼의 데이터를 Greenplum v6 버젼의 데이터 베이스에 마이그레이션 하는 스크립트 
+  	Greenplum 소스와 타겟 정보 : 3_gpcopy_non_prt_all.sh, 4_gpcopy_prt_all.sh 파일 참고
+	소스(v4) : --source-host mdw --source-port 5432 --source-user gpadmin
+	소스(v6) : --dest-host mdw --dest-port 5433 --dest-user gpadmin
+ 	Option : --truncate --jobs 8 --validate count --analyze
 	
-## 2.파일 내용 요약 ##
+	
+## 3.파일 내용 요약 ##
 
 	0_gpcopy_init.sh 		: 작업 디렉토리 생성 및 로그 기존 로그 삭제 
 	1_tbl_size_report.sh		: ./sql 경로의 쿼리를 실행하여 리포트 작성
@@ -19,7 +28,7 @@
 	4_gpcopy_prt_all.sh         	: 2_gen_include_table_file.sh 에서 생성된 파일중 파티션 테이블 대상으로 gpcopy 실행 	(기본 옵션 : truncate,validate count, jobs 8, analyze)
 	5_gpcopy_all.sh             	: 0~4번 스크립트를 일괄 실행
 
-## 3.디렉토리 설명 ##
+## 4.디렉토리 설명 ##
 
 	./include-table-file        : gpcopy 대상 테이블 파일 
 	./logs                      : 작업로그 
