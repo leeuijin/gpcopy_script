@@ -3,7 +3,7 @@
  	git clone https://github.com/leeuijin/gpcopy_script
   	cd ./gpcopy_script
    	chmod +x *.sh
-    	sh 5_gpcopy_all.sh
+    sh 5_gpcopy_all.sh
 
 ## 2. 설명    ##
 
